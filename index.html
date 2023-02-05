@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="container-logo">
+            <img class="logo" src="images/logo.svg" alt="Logo Alura">
+            <h1>Encriptador de mensajes</h1>
+            
+        </div>
+        <div class="container-left">
+            <input class="input-text" type="text" id="inputText" placeholder="Ingrese el texto aquí">
+        </div>
+        <div class="container-right">
+            <img class="image" id="imageLeft" src="images/muneco.svg" alt="Imagen Muñeco">
+            <h2 id="message">Ningún mensaje fue encontrado</h2>
+            <textarea class="text-area" name="" id="textArea" cols="30" rows="10">Ingrese el texto que desee encriptar o desencriptar</textarea>
+            <button type="button" id="copyText" onclick="textCopy()">Copiar</button> 
+        </div>
+        <div class="container-button">
+            <p style="padding-left: 130px;">Ingrese solo letras sin acento!</p>
+            <div class="btn">
+                <button type="button" id="btn-encriptar" onclick="encrypt()">Encriptar</button>
+                <button type="button" id="btn-desencriptar" onclick="decrypt()">Desencriptar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>By Rosana Inés Rojas - Alura Latam</p>
+    </footer>
+    
+</body>
+</html>
